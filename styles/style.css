@@ -102,7 +102,7 @@ main {
   padding-block: 3px;
   font-family: var(--main-font);
   font-size: 18px;
-  font-weight: var(--font-weight-l);
+  font-variation-settings: 'wght' var(--font-weight-l);
   line-height: 21.78px;
   margin-inline-start: 10px;
 }
@@ -112,7 +112,7 @@ main {
   grid-row: 2 / auto;
   display: block;
   inline-size: 100%;
-  block-size: 696px;
+  aspect-ratio: 1 / 1;
   position: relative;
   object-position: center;
   object-fit: cover;
@@ -128,11 +128,19 @@ main {
   inset-block-start: 56px;
   inset-inline-end: 25px;
   text-shadow: 0 0 1px #fff;
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: #fff;
   mix-blend-mode: hard-light;
   max-inline-size: 310px;
 }
+
+@supports((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  /* stylelint-disable-next-line rule-empty-line-before */
+  .section-content::after {
+    -webkit-text-stroke: 1px #fff;
+    /* stylelint-disable-next-line property-no-unknown */
+    text-stroke: 1px #fff;
+    text-shadow: none;
+  }
+} 
 
 .freetrack {
   --label-text: 'Страх, неуверенность в себе.';
@@ -174,10 +182,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 27px;
-  font-family: var();
+  font-family: var(--main-font);
   font-size: 18px;
   line-height: 21px;
-  font-weight: var(--font-weight-m);
+  font-variation-settings: 'wght' var(--font-weight-m);
 }
 
 .card__icon-button {
@@ -358,6 +366,10 @@ button:hover {
 
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.1);
+}
+
+dialog .button__text {
+  mix-blend-mode: normal;
 }
 
 .filter__blur {

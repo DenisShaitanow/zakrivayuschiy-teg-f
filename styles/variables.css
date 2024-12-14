@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 /* stylelint-disable-next-line rule-empty-line-before */
-:root 
+:root
   {
     --main-color: #000;
     --button-color: #fff;
@@ -10,11 +10,11 @@
     --font-weight-l: 700;
     --text-color: #000;
     --header-main-inline-size: clamp(375px, calc(700% / 1440 * 100), 700px);
-    --heder-logo-font-size: clamp(3.0625rem, 2.7154rem + 1.4967vw, 4.0625rem);;
+    --heder-logo-font-size: clamp(3.0625rem, 2.7154rem + 1.4967vw, 4.0625rem);
     --header-title-font-size: clamp(0.875rem, 0.6798rem + 0.8419vw, 1.4375rem);
     --label-text: 'Страх, неуверенность в себе.';
     --line-height-modal-window-text: 21px;
-    --modal-window-inline-size: clamp(341px, calc(696% / 1440 * 100), 353px);;
+    --modal-window-inline-size: clamp(341px, calc(696% / 1440 * 100), 353px);
     --pcontour: #000;
     --pmain-body: none;
     --pcore: none;
