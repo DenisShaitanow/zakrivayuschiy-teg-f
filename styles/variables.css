@@ -1,7 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 /* stylelint-disable-next-line rule-empty-line-before */
-:root
-  {
+:root {
     --main-color: #000;
     --button-color: #fff;
     --main-font: 'Inter-Variable', sans-serif;
