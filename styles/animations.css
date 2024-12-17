@@ -20,7 +20,7 @@
   transition: fill 0.3s ease;
 }
   
-.like-icon:hover .core { 
+.like-icon:hover .core {
   fill: var(--pcore-hover);
   transition: fill 0.3s ease;
 }
