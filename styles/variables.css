@@ -14,8 +14,8 @@
     --line-height-modal-window-text: 21px;
     --modal-window-inline-size: clamp(341px, calc(696% / 1440 * 100), 353px);
     --pcontour: #000;
-    --pmain-body: #none;
-    --pcore: #none;
+    --pmain-body: none;
+    --pcore: none;
     --psparks: #F00;
     --pmain-body-hover: #000;
     --pcore-hover: #000;

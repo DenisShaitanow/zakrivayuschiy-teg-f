@@ -101,7 +101,7 @@ main {
   font-family: var(--main-font);
   font-size: 18px;
   font-variation-settings: 'wght' var(--font-weight-l);
-  line-height: 1,36rem;
+  line-height: 1.36rem;
   padding: 3px 24px 3px 10px;
 }
 
@@ -175,8 +175,6 @@ main {
   justify-content: center;
   align-items: center;
   transition: border 0.3s ease;
-  --pcore: none;
-  --pmain-body: none;
 }
 
 .card__icon-button img {
@@ -314,7 +312,7 @@ button:hover {
 }
 
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.9);
+  background: var(--main-color, #000);
 }
 
 .filter__blur {
@@ -352,7 +350,6 @@ dialog::backdrop {
 .button:focus-visible {
   box-shadow: 2px 2px 0 #000;
   outline: none;
-  border: 2px solid var(--main-color);
 }
 
 @media (width <= 376px) {
