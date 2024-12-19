@@ -313,6 +313,7 @@ button:hover {
 
 dialog::backdrop {
   background: var(--main-color, #000);
+  opacity: 0.75;
 }
 
 .filter__blur {
